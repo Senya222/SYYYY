@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SportmagazinModelContainer" CdmEntityContainer="SportmagazinEntities">
+    <EntitySetMapping Name="Polzovatel">
+      <EntityTypeMapping TypeName="SportmagazinModel.Polzovatel">
+        <MappingFragment StoreEntitySet="Polzovatel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Familiya" ColumnName="Familiya" />
+          <ScalarProperty Name="Imya" ColumnName="Imya" />
+          <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+          <ScalarProperty Name="IDRol" ColumnName="IDRol" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Parol" ColumnName="Parol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proizvoditel">
+      <EntityTypeMapping TypeName="SportmagazinModel.Proizvoditel">
+        <MappingFragment StoreEntitySet="Proizvoditel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Punkt">
+      <EntityTypeMapping TypeName="SportmagazinModel.Punkt">
+        <MappingFragment StoreEntitySet="Punkt">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="SportmagazinModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sklad">
+      <EntityTypeMapping TypeName="SportmagazinModel.Sklad">
+        <MappingFragment StoreEntitySet="Sklad">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sklad_Tovar">
+      <EntityTypeMapping TypeName="SportmagazinModel.Sklad_Tovar">
+        <MappingFragment StoreEntitySet="Sklad_Tovar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDSklad" ColumnName="IDSklad" />
+          <ScalarProperty Name="IDTovar" ColumnName="IDTovar" />
+          <ScalarProperty Name="Kolichestvo" ColumnName="Kolichestvo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SportmagazinModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tovar">
+      <EntityTypeMapping TypeName="SportmagazinModel.Tovar">
+        <MappingFragment StoreEntitySet="Tovar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+          <ScalarProperty Name="Opisanie" ColumnName="Opisanie" />
+          <ScalarProperty Name="IDProizvoditel" ColumnName="IDProizvoditel" />
+          <ScalarProperty Name="Cena" ColumnName="Cena" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zakaz">
+      <EntityTypeMapping TypeName="SportmagazinModel.Zakaz">
+        <MappingFragment StoreEntitySet="Zakaz">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nomer" ColumnName="Nomer" />
+          <ScalarProperty Name="DataZakaza" ColumnName="DataZakaza" />
+          <ScalarProperty Name="DataVidachi" ColumnName="DataVidachi" />
+          <ScalarProperty Name="IDPunkt" ColumnName="IDPunkt" />
+          <ScalarProperty Name="Summa" ColumnName="Summa" />
+          <ScalarProperty Name="IDPolzovatel" ColumnName="IDPolzovatel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zakaz_Tovar">
+      <EntityTypeMapping TypeName="SportmagazinModel.Zakaz_Tovar">
+        <MappingFragment StoreEntitySet="Zakaz_Tovar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDZakaz" ColumnName="IDZakaz" />
+          <ScalarProperty Name="IDTovar" ColumnName="IDTovar" />
+          <ScalarProperty Name="Kolichesto" ColumnName="Kolichesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
